@@ -1,0 +1,401 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+   font-family: "Montserrat", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 300;
+   font-style: normal;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+   /* z-index: 1000;*/
+    width: 100%;
+    height: 65px;
+    display: flex;
+    background-color: #D3D3E0;
+}
+
+.nav-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #212121;
+}
+
+.menu-items{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li{
+   padding: 10px 20px;
+   display: inline-block;
+}
+
+.contacto{
+    align-items: center;
+    justify-content: center;
+    background-color: #e05e12; /* Ejemplo de color de fondo */
+    color: #212121; /* Color del texto */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logo{
+    width: 120px;
+    height: auto;
+}
+
+.margenes{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(194, 194, 207, 1) 0%, rgba(194, 194, 207, 1) 28%, rgba(112, 112, 118, 1) 59%, rgba(102, 99, 99, 1) 100%); 
+    background: linear-gradient(90deg, rgba(211, 211, 224, 1) 0%, rgba(147, 147, 158, 1) 100%);
+    background-image: url(imagenes/fondo-nick-defi.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    margin-top: 65px;
+}
+/*
+.hero-section{
+    font-family: "Montserrat", sans-serif;
+    height: 200px;
+    color: #1c1c1c;
+    font-style: normal;
+    position: absolute;
+    top: 200px;
+    max-width: 700px;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 22px;
+    font-weight: 400;
+}
+*/
+
+.hero-section {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* CENTRA TODO EL CONTENIDO VERTICALMENTE */
+    align-items: center; /* CENTRA TODO EL CONTENIDO HORIZONTALMENTE */
+    text-align: center; /* Asegura que el texto dentro de los elementos también se centre */
+    /*min-height: 100vh;  Asegura que la sección tenga suficiente altura para el centrado vertical */
+    max-width: 1000px; /* Establece el ANCHO MÁXIMO del contenido */
+    margin: 0 auto; /* CENTRA HORIZONTALMENTE el propio hero-section si tiene un max-width */
+    padding: 20px; /* Un poco de padding para que el contenido no se pegue a los bordes si el ancho es pequeño */
+    padding-top: 80px;
+     
+}
+
+.hero-section h1 {
+     font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 0.5em; /* Reduce el espacio debajo del h1 para acercarlo al párrafo */
+    font-size: 52px;
+    font-weight: 600;
+    /*color: #1a1a1a;*/
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+
+    /* text-align: center; ya lo hereda de .hero-section */
+}
+
+/*.garantizada{
+     color:#e05e12;
+}*/
+
+.hero-section p {
+    margin-top: 0; /* Elimina el margen superior del párrafo para pegarlo al h1 */
+    margin-bottom: 1em; /* Un poco de espacio debajo del párrafo descriptivo */
+    font-size: 20px;
+    font-weight: 500;
+     max-width: 800px;
+      color: #ffffff;
+    /* text-align: center; ya lo hereda de .hero-section */
+}
+
+.ver-servicios a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hero-section ul {
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none; /* Quita los puntos de lista por defecto */
+    padding: 0; /* Elimina el padding por defecto del ul */
+    margin-top: 1em; /* Espacio arriba del ul */
+    margin-bottom: 2em; /* Espacio abajo del ul para separarlo del botón */
+    width: 100%; /* Permite que el ul se alinee dentro del centro */
+    max-width: 300px; /* Opcional: limita el ancho de la lista si los ítems son cortos */
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+     color: #ffffff;
+}
+
+.hero-section ul li {
+    margin-bottom: 0.5em; /* Espacio entre cada ítem de la lista */
+    /* text-align: center; ya lo hereda del .hero-section */
+}
+
+.hero-section .ver-servicios {
+    margin-top: 2em; /* Espacio superior para separar el botón del texto descriptivo */
+    /* align-self: center; ya no es necesario porque align-items: center en el padre ya lo centra */
+    /* text-align: center; ya lo hereda de .hero-section */
+
+    /* Estilos adicionales para que parezca un botón */
+    background-color: #e05e12; /* Ejemplo de color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; /* Necesario para que padding y margin funcionen correctamente si fuera un 'a' */
+}
+
+.hero-section li{
+    list-style-type: none;
+}
+
+.check-icon{
+    font-size: 25px;
+    color:#e05e12;
+
+}
+
+
+/* Sección contenedora general de las cards, para márgenes superiores/inferiores */
+.cards-section {
+    padding-top: 60px; /* Margen superior: ajusta este valor para el espacio deseado */
+    padding-bottom: 60px; /* Margen inferior: ajusta este valor para el espacio deseado */
+    background-color: #D3D3E0; /* Color de fondo de la sección, si quieres que destaque */
+}
+
+.servicios{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #212121;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* Contenedor Flexbox para las cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards salten a la siguiente línea en pantallas pequeñas */
+    justify-content: center; /* Centra las cards horizontalmente cuando no llenan una fila */
+    gap: 15px; /* *** REDUCIDO EL ESPACIO ENTRE CARDS para que quepan mejor. Ajusta este valor. */
+    max-width: 1300px; /* *** AUMENTADO EL ANCHO MÁXIMO del contenedor para dar más espacio horizontal. */
+    margin: 0 auto; /* Centra el contenedor de cards en la página */
+    padding: 0 15px; /* Reduce el padding lateral para ganar más espacio para las cards */
+}
+
+/* Estilos para cada Card individual */
+.card {
+    /* Calculo para 5 cards por fila, ajustando para el nuevo gap */
+    /* (100% / 5 cards = 20%) - el nuevo gap (15px) */
+    flex: 1 1 calc(20% - 15px); /* Ajustado para el nuevo gap */
+    max-width: 175px; /* *** REDUCIDO EL ANCHO MÍNIMO de cada card para que sean más compactas */
+    background-color: #ffffff; /* Color de fondo de la card */
+    border-radius: 8px; /* Bordes redondeados de la card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para un efecto de elevación */
+    padding: 20px; /* *** REDUCIDO EL PADDING INTERNO para hacer la card más pequeña. Ajusta este valor. */
+    text-align: center; /* Centra el contenido (logo, título, subtítulo) dentro de la card */
+    display: flex; /* Para centrar el contenido verticalmente */
+    flex-direction: column; /* Apila el contenido de la card */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para el área del Icono/Logo */
+.card-icon {
+    width: 50px; /* *** REDUCIDO el tamaño del icono */
+    height: 50px; /* *** REDUCIDO el tamaño del icono */
+    margin-bottom: 10px; /* Espacio debajo del icono */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub1{
+    padding-top: 21px;
+}
+.card-icon img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para el Título de la Card */
+.card-title {
+    font-size: 1.2em; /* *** REDUCIDO el tamaño de fuente del título */
+    color: #333333;
+    margin-bottom: 8px; /* Espacio debajo del título */
+}
+
+/* Estilos para el Subtítulo de la Card */
+.card-subtitle {
+    font-size: 0.9em; /* *** REDUCIDO el tamaño de fuente del subtítulo */
+    color: white;
+    background-color: #e05e12;
+    padding: 5px 10px;
+    border-radius: 2px;
+    line-height: 1.2; /* Ajustado para mejor legibilidad con fuente más pequeña */
+    margin-bottom: 0;
+}
+.sub1{
+    margin-top: 35px;
+}
+
+.icon{
+    font-size: 40px;
+    color: #212121;
+
+}
+
+ .swiper {
+      width: 240px;
+      height: 320px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
+
+    .swiperrr{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.descripcion{
+    max-width: 700px;
+    font-family: "Montserrat, sans-serif";
+    font-style: normal;
+    font-weight: 400;
+}
+.sobre-nosotros{
+    font-size: 20px;
+    color:#212121;
+    align-items: flex-start;
+}
+
+
+
+
+/* --- Responsive Adjustments (Opcional pero Recomendado) --- */
+/* Mantengo los mismos breakpoints, pero la primera fila ahora se verá más apretada en notebooks */
+/* Es posible que desees que en 1024px o 1200px todavía muestre 4 cards en lugar de 3. */
+
+@media (max-width: 1200px) { /* Nuevo breakpoint, ajusta a tus necesidades de "notebook" */
+    .cards-container {
+        max-width: 1000px; /* Reducimos el max-width del contenedor para pantallas más pequeñas */
+    }
+    .card {
+        flex: 1 1 calc(20% - 15px); /* Siguen siendo 5 cards por fila si hay espacio */
+        min-width: 160px; /* Podrían reducirse un poco más */
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(33.333% - 15px); /* 3 cards por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 15px); /* 2 cards por fila en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* 1 card por fila en móviles */
+    }
+    .cards-container {
+        padding: 0 10px;
+    }
+    .cards-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

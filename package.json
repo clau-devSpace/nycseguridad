@@ -1,12 +1,15 @@
+
+
 {
-  "devDependencies": {
-    "serve": "^11.2.0"
-  },
-  "main": "index.html",
   "name": "swiper-effect-cards",
+  "version": "1.0.0",
+  "main": "index.html",
   "scripts": {
-    "build": "echo This is a static template, there is no bundler or bundling involved!",
-    "start": "serve"
+    "build": "echo 'Static site ready'",
+    "dev": "serve -s . -l 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.3"
   },
   "tags": [
     "swiper"
